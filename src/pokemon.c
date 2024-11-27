@@ -2603,12 +2603,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         if ((gBattleTypeFlags & BATTLE_TYPE_DOUBLE) && gBattleMoves[move].target == MOVE_TARGET_BOTH && CountAliveMonsInBattle(BATTLE_ALIVE_DEF_SIDE) == 2)
             damage /= 2;
     }
-
-    return damage + 2;
-}
-
 // Are effects of weather negated with cloud nine or air lock
-        if (WEATHER_HAS_EFFECT2)
+if (WEATHER_HAS_EFFECT2)
         {
             // Rain weakens Fire, boosts Water
             if (gBattleWeather & B_WEATHER_RAIN_TEMPORARY)
@@ -2646,6 +2642,8 @@ s32 CalculateBaseDamage(struct BattlePokemon *attacker, struct BattlePokemon *de
         // Flash fire triggered
         if ((gBattleResources->flags->flags[battlerIdAtk] & RESOURCE_FLAG_FLASH_FIRE) && type == TYPE_FIRE)
             damage = (15 * damage) / 10;
+    return damage + 2;
+}
 
 u8 CountAliveMonsInBattle(u8 caseId)
 {
