@@ -230,13 +230,13 @@ static const struct WindowTemplate sStandardBattleWindowTemplates[] = {
         .paletteNum = 5,
         .baseBlock = 0x2a6
     },
-    [B_WIN_DUMMY] = {
+    [B_WIN_PSS_ICON] = {
         .bg = 0,
-        .tilemapLeft = 25,
+        .tilemapLeft = 27,
         .tilemapTop = 57,
-        .width = 0,
-        .height = 0,
-        .paletteNum = 5,
+        .width = 2,
+        .height = 2,
+        .paletteNum = 10,
         .baseBlock = 0x2b0
     },
     [B_WIN_SWITCH_PROMPT] = {

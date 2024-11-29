@@ -91,6 +91,7 @@
 #define MON_DATA_SPEED2                   86
 #define MON_DATA_SPATK2                   87
 #define MON_DATA_SPDEF2                   88
+#define MON_DATA_NATURE                   89
 
 // Pokemon types
 #define TYPE_NONE           255
@@ -182,7 +183,7 @@
 #define MAX_STAT_STAGE    12
 
 // Shiny odds
-#define SHINY_ODDS 8 // Actual probability is SHINY_ODDS/65536
+#define SHINY_ODDS 16 // Actual probability is SHINY_ODDS/65536
 
 #define MAX_LEVEL 100
 
